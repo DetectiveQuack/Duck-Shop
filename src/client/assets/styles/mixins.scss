@@ -1,0 +1,7 @@
+@mixin animation($name, $seconds: 0.2s, $fill-mode: forwards) {
+    -webkit-animation: $name $seconds linear;
+    -moz-animation: $name $seconds linear;
+    animation: $name $seconds linear;
+    animation-fill-mode: $fill-mode;
+    -webkit-animation-fill-mode: $fill-mode;
+}

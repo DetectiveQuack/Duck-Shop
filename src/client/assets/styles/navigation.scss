@@ -1,0 +1,34 @@
+@import './variables';
+@import './app';
+@import './animations/slides';
+.navbar {
+    border-radius: 0;
+    height: 100%;
+    &.navbar-fixed-left {
+        position: absolute;
+        height: 100%;
+        background: $smokey-grey;
+        color: $white;
+        left: -300px;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        /* adds animation for all transitions */
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        &.nav-slide-open {
+            -webkit-text-size-adjust: none;
+            // width: calc(100% - 300px);
+            left: 0;
+        }
+    }
+}
+
+.navbar.navbar-fixed-left.nav-slide-open~.page-content {
+    margin-left: 300px;
+}

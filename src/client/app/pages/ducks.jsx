@@ -7,12 +7,11 @@ class Ducks extends Component {
             <div>
                 Ducks
                 <div className="container">
-                    <button className="btn btn-default"></button>
+                    <button className="btn btn-default">Look at all these ducks</button>
                 </div>
             </div>
         );
     }
-
 }
 
 export default Ducks;

@@ -1,0 +1,15 @@
+/* Makes sure that everything is 100% height */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.page-content {
+    /* adds animation for all transitions */
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}

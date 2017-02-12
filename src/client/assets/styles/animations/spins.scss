@@ -1,0 +1,37 @@
+@-moz-keyframes quarter-spin-anti-clockwise {
+    100% {
+        -moz-transform: rotate(90deg);
+    }
+}
+
+@-webkit-keyframes quarter-spin-anti-clockwise {
+    100% {
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+@keyframes quarter-spin-anti-clockwise {
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@-moz-keyframes quarter-spin-clockwise {
+    100% {
+        -moz-transform: rotate(-90deg);
+    }
+}
+
+@-webkit-keyframes quarter-spin-clockwise {
+    100% {
+        -webkit-transform: rotate(-90deg);
+    }
+}
+
+@keyframes quarter-spin-clockwise {
+    100% {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
