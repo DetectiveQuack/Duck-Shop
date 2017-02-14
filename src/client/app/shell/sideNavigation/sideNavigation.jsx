@@ -1,17 +1,16 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { observer } from 'mobx-react';
-import { observe } from 'mobx';
 
 import navigationStore from '../../stores/navigation';
 
-const styles = require('../../../assets/styles/navigation.scss');
+const routes = ['/ducks', '/home'];
 
-let rows = ['/ducks', '/home'].map(function (key, value) {
-  return (<Link to={key} key={value}>
-    <button className='btn btn-default'>{key.slice(1)}</button>
-  </Link>);
-});
+const rows = routes.map(key => (
+  <Link to={key} key={key}>
+    <button className="btn btn-default">{key.slice(1)}</button>
+  </Link>)
+);
 
 @observer class SideNavigation extends Component {
   render() {
