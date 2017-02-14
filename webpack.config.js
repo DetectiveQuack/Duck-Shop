@@ -1,37 +1,39 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
+const BUILD_DIR = path.resolve(__dirname, 'src/client/public');
+const APP_DIR = path.resolve(__dirname, 'src/client/app');
 
-var config = {
-    entry: [
-        APP_DIR + '/index.jsx'
-    ],
-    output: {
-        path: BUILD_DIR,
-        filename: 'bundle.js'
+const config = {
+  entry: [
+    `${APP_DIR}/index.jsx`
+  ],
+  output: {
+    path: BUILD_DIR,
+    filename: 'bundle.js'
+  },
+  devtool: 'eval',
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  module: {
+    loaders: [{
+      test: /\.jsx?$/,
+      include: APP_DIR,
+      loader: 'babel-loader'
     },
-    devtool: 'eval',
-    module: {
-        loaders: [{
-                test: /\.jsx?$/,
-                include: APP_DIR,
-                loader: 'babel-loader'
-            },
-            {
-                test: /\.scss$/,
-                loaders: ['style-loader', 'css-loader?sourceMap']
-            },
-            {
-                test: /\.scss$/,
-                loader: 'sass-loader',
-                options: {
-                    includePaths: ['node_modules']
-                }
-            }
-        ]
+    {
+      test: /\.scss$/,
+      loaders: ['style-loader', 'css-loader?sourceMap']
+    },
+    {
+      test: /\.scss$/,
+      loader: 'sass-loader',
+      options: {
+        includePaths: ['node_modules']
+      }
     }
+    ]
+  }
 };
 
 module.exports = config;

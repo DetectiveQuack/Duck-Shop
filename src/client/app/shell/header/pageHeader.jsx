@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
 
-import navigationStore from '../../stores/navigation';
-import MenuButton from './menuButton.jsx';
+import MenuButton from './menuButton';
 import Constants from '../../config/constants';
 
 require('../../../assets/styles/pageHeader.scss');
 
 class PageHeader extends Component {
 
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            className: ''
-        };
-    }   
+    this.state = {
+      className: ''
+    };
+  }
 
-    render() {
-        return (
-            <div className='page-header'>
-                <MenuButton></MenuButton>
-                <h2>{Constants.TITLE}</h2>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="page-header">
+        <MenuButton />
+        <h2>{Constants.TITLE}</h2>
+      </div>
+    );
+  }
 
 }
 

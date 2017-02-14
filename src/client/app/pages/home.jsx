@@ -1,11 +1,10 @@
-import React, { Component, PropTypes } from 'react';
-import { render } from 'react-dom';
+import React, { Component } from 'react';
 
 class Home extends Component {
 
-    render(){
-        return (<h1>Home</h1>);
-    }
+  render() {
+    return (<h1>Home</h1>);
+  }
 
 }
 

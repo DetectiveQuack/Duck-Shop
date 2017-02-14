@@ -93,3 +93,5 @@ jspm_packages
 !.vscode/extensions.json
 
 # End of https://www.gitignore.io/api/node,macos,visualstudiocode
+
+src/client/public/bundle.js
