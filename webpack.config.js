@@ -11,7 +11,7 @@ const config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
-  devtool: 'eval',
+  devtool: 'sourcemap',
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -31,8 +31,7 @@ const config = {
       options: {
         includePaths: ['node_modules']
       }
-    }
-    ]
+    }]
   }
 };
 

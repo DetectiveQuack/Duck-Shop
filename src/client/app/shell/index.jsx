@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
-import PageHeader from './header/pageHeader';
-import SideNavigation from './sideNavigation/sideNavigation';
+import PageHeader from './header';
+import SideNavigation from './sideNavigation';
 
 class Shell extends Component {
 
@@ -11,7 +11,9 @@ class Shell extends Component {
         <SideNavigation />
         <div className="page-content">
           <PageHeader />
-          {this.props.children}
+          <div className="container">
+            {this.props.children}
+          </div>
         </div>
       </div>
     );

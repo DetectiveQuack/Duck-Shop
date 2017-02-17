@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import Shell from '../shell/shell';
-import Home from '../pages/home';
+import Shell from '../shell';
+import Home from '../shell/home';
 import Ducks from '../pages/ducks';
 import NotFound from '../pages/notFound';
 

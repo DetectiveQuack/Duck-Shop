@@ -8,10 +8,11 @@ require('../../../assets/styles/navigation.scss');
 
 const routes = ['/ducks', '/home'];
 
-const rows = routes.map(key => (<Link to={key} key={key}>
-  <button className="btn btn-default">{key.slice(1)}</button>
-</Link>)
-);
+const rows = routes.map(key => (
+  <Link to={key} key={key}>
+    <button className="btn btn-default">{key.slice(1)}</button>
+  </Link>
+));
 
 @observer class SideNavigation extends Component {
   render() {
