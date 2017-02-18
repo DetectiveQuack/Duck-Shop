@@ -6,10 +6,24 @@ body {
     overflow: hidden;
 }
 
+#app {
+    height: 100%;
+}
+
+div[data-reactroot] {
+    height: 100%;
+}
+
 .page-content {
     /* adds animation for all transitions */
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+    height: 100%;
+}
+
+.content {
+    overflow-y: auto;
+    height: 100%;
 }

@@ -1,19 +1,11 @@
+import axios from 'axios';
+
+import Constants from '../config/constants';
+
 class Data {
 
-  static getData() {
-    return new Promise((resolve) => {
-      setTimeout(() =>
-        resolve([{
-          description: 'hello duck 1',
-          price: 1
-        }, {
-          description: 'hello duck 2',
-          price: 2
-        }, {
-          description: 'hello duck 3',
-          price: 3
-        }]), 500);
-    });
+  static getDucks() {
+    return axios.get(`${Constants.BASE_URL}/ducks`);
   }
 }
 

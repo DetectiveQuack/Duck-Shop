@@ -13,7 +13,7 @@ const config = {
   },
   devtool: 'sourcemap',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.scss']
   },
   module: {
     loaders: [{

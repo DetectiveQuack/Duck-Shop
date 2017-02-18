@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 
 import navigationStore from '../../stores/navigation';
 
-require('../../../assets/styles/navigation.scss');
+require('../../../assets/styles/navigation');
 
 const routes = ['/ducks', '/home'];
 

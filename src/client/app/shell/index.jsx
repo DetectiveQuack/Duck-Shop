@@ -11,7 +11,7 @@ class Shell extends Component {
         <SideNavigation />
         <div className="page-content">
           <PageHeader />
-          <div className="container">
+          <div className="container content">
             {this.props.children}
           </div>
         </div>

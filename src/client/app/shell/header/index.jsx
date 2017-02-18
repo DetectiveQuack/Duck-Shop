@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import MenuButton from './menuButton';
 import Constants from '../../config/constants';
 
-require('../../../assets/styles/pageHeader.scss');
+require('../../../assets/styles/pageHeader');
 
 class PageHeader extends Component {
 

@@ -5,6 +5,7 @@ import { useStrict } from 'mobx';
 
 import routes from './config/routes';
 
+require('../assets/styles/app');
 
 useStrict(true);
 
